@@ -22,6 +22,8 @@ func (m MyPlugin) Name() string {
 	return "myplugin"
 }
 
+func (e MyPlugin) Ready() bool { return true }
+
 type ResponsePrinter struct {
 	dns.ResponseWriter
 }
